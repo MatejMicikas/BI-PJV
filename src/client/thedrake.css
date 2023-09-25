@@ -1,0 +1,31 @@
+#mainPane {
+    -fx-background-image: url("thedrake_background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+#title {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 55px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 2, 1, 0, 0);
+}
+
+#startBtn_1, #startBtn_2, #startBtn_3, #exitBtn {
+    -fx-pref-width: 220px;
+    -fx-pref-height: 50px;
+    -fx-font-family: "Lato", sans-serif;
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, black, 0, 0, 0, 3);
+}
+
+#startBtn_1:hover, #startBtn_2:hover, #startBtn_3:hover, #exitBtn:hover {
+    -fx-translate-y: 3px;
+    -fx-effect: dropshadow(three-pass-box, black, 0, 0, 0, 0);
+    -fx-cursor: hand;
+}

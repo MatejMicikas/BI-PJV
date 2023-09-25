@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainPane" prefHeight="710.0" prefWidth="1280.0" stylesheets="@thedrake.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="844.0" minWidth="10.0" prefWidth="492.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="844.0" minWidth="10.0" prefWidth="239.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="543.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="340.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="95.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="243.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <StackPane fx:id="titleWrapper" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@thedrake_ribbon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" text="The Drake" textAlignment="CENTER" StackPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="15.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+      <Button fx:id="startBtn_1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onStart" text="Hra dvou hráčů" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="startBtn_2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Hra proti počítači" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="startBtn_3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Hra po internetu" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onExit" text="Konec" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
